@@ -81,14 +81,14 @@ The `lib\request_utility\dio_api_consuming_simplification.dart` simplifies api r
 Below contains a snippet of how this is being used
 
 ```
-Future<SuccessResponse<ResponseModel>> apiRequestFunction(
+Future<SuccessResponse<MyResponseModel>> apiRequestFunction(
       double longitude, double latitude) async {
     String url = "https://my-api-url.com";
 
     return await DioApiConsumption.instance.simplifyApiRequest(
       () => helper.get(url),
       successResponse: (json) => SuccessResponse(
-        LocationIQResponseModel.fromJson(json),
+        MyResponseModel.fromJson(json),
       ),
     );
   }
