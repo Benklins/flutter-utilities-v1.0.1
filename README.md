@@ -33,8 +33,14 @@
 
 ### Flutter-utilities
 
-This is a utilility package for flutter/dart to ease up and clean up repetitive code that makes api requests, regardless of the network library used
+This is a utilility package for flutter/dart is a clean and effient way to handle repetitive code that makes api requests, regardless of the network library used
 it can be customised to suit your needs.
+
+### Benefits
+* Cleans code while making api requests.
+* Api request error check is handled in one place.
+* Efficiency 
+* Predictable response and error.
 
 ### Built With
 
