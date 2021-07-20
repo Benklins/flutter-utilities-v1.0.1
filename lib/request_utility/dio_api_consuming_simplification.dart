@@ -1,9 +1,8 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:utilities/request_utility/error/error.dart';
-import 'package:utilities/request_utility/simplify_api_consuming_base.dart';
-import 'package:utilities/request_utility/success/success.dart';
+
+import '../utilities.dart';
 
 class DioApiConsumption
     extends SimplifyApiConsumingBase<Response, SuccessResponse, ErrorResponse> {

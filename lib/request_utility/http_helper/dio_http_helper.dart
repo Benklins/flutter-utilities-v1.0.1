@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:utilities/request_utility/http_helper/http_helper.dart';
+
+import '../../utilities.dart';
 
 class DioHttpHelper extends HttpHelper<Response> {
   static late Dio _client;
