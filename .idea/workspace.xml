@@ -3,8 +3,29 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbffd5dc-5250-4302-bbd2-f53431ceb121" name="Default Changelist" comment="resolved issue where wrong import was causing caos" />
+    <list default="true" id="dbffd5dc-5250-4302-bbd2-f53431ceb121" name="Default Changelist" comment="resolved issue where wrong import was causing caos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utilities.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utilities.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626788851009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="resolved issue where wrong import was causing caos">
+      <created>1626789122884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626789122885</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -56,6 +84,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolved issue where wrong import was causing caos" />
@@ -66,9 +95,9 @@
       <screen x="0" y="25" width="1440" height="814" />
     </state>
     <state x="229" y="68" key="SettingsEditor/0.25.1440.814@0.25.1440.814" timestamp="1626788706840" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1626788943740">
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1626789124758">
       <screen x="0" y="25" width="1440" height="814" />
     </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1626788943740" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1626789124758" />
   </component>
 </project>
