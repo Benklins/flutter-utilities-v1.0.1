@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbffd5dc-5250-4302-bbd2-f53431ceb121" name="Default Changelist" comment="" />
+    <list default="true" id="dbffd5dc-5250-4302-bbd2-f53431ceb121" name="Default Changelist" comment="resolved issue where wrong import was causing caos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,12 +36,39 @@
       <option name="presentableId" value="Default" />
       <updated>1626788665543</updated>
     </task>
+    <task id="LOCAL-00001" summary="resolved issue where wrong import was causing caos">
+      <created>1626788851008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626788851009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="resolved issue where wrong import was causing caos" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolved issue where wrong import was causing caos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="229" y="68" key="SettingsEditor" timestamp="1626788706840">
       <screen x="0" y="25" width="1440" height="814" />
     </state>
     <state x="229" y="68" key="SettingsEditor/0.25.1440.814@0.25.1440.814" timestamp="1626788706840" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1626788943740">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1626788943740" />
   </component>
 </project>
