@@ -7,12 +7,22 @@ import 'package:mocktail/mocktail.dart';
 
 class MockResponse extends Mock implements Response {}
 
+class DioApiConsumptionImpl extends DioApiConsumption {
+  @override
+  ErrorResponse parseErrorFromResponse(Response requestResponse) {
+    return ErrorResponse(
+        errorMessage: requestResponse.data['message'] ?? 'An error occurred',
+        statusCode: requestResponse.statusCode,
+        data: requestResponse.data);
+  }
+}
+
 main() {
   late MockResponse mockResponse;
   late DioApiConsumption dioApiConsuming;
   setUp(
     () {
-      dioApiConsuming = DioApiConsumption.factory();
+      dioApiConsuming = DioApiConsumptionImpl();
       mockResponse = MockResponse();
     },
   );

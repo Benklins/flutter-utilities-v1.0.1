@@ -10,6 +10,6 @@ abstract class HttpHelper<R> {
   Future<R> patch(String url, {dynamic body});
 
   Future<R> delete(String url, {dynamic body});
-
-  String get authorizationToken;
+  
+  Map<String, String> get headers;
 }

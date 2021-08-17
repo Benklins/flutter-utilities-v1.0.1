@@ -2,17 +2,11 @@ import 'package:dio/dio.dart';
 
 import '../../utilities.dart';
 
-class DioHttpHelper extends HttpHelper<Response> {
+abstract class DioHttpHelper extends HttpHelper<Response> {
   static late Dio _client;
 
   Future<Dio> _getInstance() async {
-    final storageToken = authorizationToken;
-
     _client = Dio();
-
-    Map<String, dynamic> headers = {};
-    headers['Content-Type'] = 'application/json';
-    if (storageToken != null) headers['Authorization'] = 'Token $storageToken';
 
     _client.options.headers = headers;
 
@@ -52,5 +46,5 @@ class DioHttpHelper extends HttpHelper<Response> {
   }
 
   @override
-  String get authorizationToken => 'token';
+  Map<String, String> get headers;
 }

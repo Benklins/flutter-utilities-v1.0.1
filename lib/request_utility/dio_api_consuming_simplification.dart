@@ -4,16 +4,8 @@ import 'package:dio/dio.dart';
 
 import '../utilities.dart';
 
-class DioApiConsumption
+abstract class DioApiConsumption
     extends SimplifyApiConsumingBase<Response, SuccessResponse, ErrorResponse> {
-  static DioApiConsumption? _instance;
-  DioApiConsumption.factory();
-
-  static DioApiConsumption get instance {
-    if (_instance == null) _instance = DioApiConsumption.factory();
-    return _instance!;
-  }
-
   @override
   Future<SuccessResponse> simplifyApiRequest(
       Future<Response> Function() requestFunction,
@@ -96,10 +88,5 @@ class DioApiConsumption
   }
 
   @override
-  ErrorResponse parseErrorFromResponse(Response requestResponse) {
-    return ErrorResponse(
-        errorMessage: requestResponse.data['message'] ?? 'An error occurred',
-        statusCode: requestResponse.statusCode,
-        data: requestResponse.data);
-  }
+  ErrorResponse parseErrorFromResponse(Response requestResponse);
 }
