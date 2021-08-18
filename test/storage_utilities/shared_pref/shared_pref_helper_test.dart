@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_utilities/storage_utility/shared_pref/storage.helper.dart';
+import 'package:flutter_utilities/storage_utility/shared_pref/storage_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 main() {
