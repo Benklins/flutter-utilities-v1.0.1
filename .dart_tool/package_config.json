@@ -26,6 +26,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "bloc",
+      "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-7.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
       "packageUri": "lib/",
@@ -140,6 +146,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_bloc",
+      "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-7.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/jasperessien/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -212,6 +224,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "node_preamble",
       "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/node_preamble-2.0.1",
       "packageUri": "lib/",
@@ -274,6 +292,12 @@
     {
       "name": "process",
       "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/jasperessien/development/flutter/.pub-cache/hosted/pub.dartlang.org/provider-5.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -470,7 +494,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-08-18T04:31:23.322868Z",
+  "generated": "2021-08-18T17:38:45.394789Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

@@ -6,3 +6,5 @@ export 'package:flutter_utilities/request_utility/success/success.dart';
 
 export 'connection_utility/connection_utility_export.dart';
 export 'storage_utility/storage_utility_export.dart';
+export 'cubit_utility/cubit_utility_export.dart';
+export 'viewmodel_utility/viewmodel_utility_export.dart';
