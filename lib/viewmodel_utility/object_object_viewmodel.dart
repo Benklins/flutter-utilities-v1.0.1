@@ -10,5 +10,6 @@ abstract class ObjectBaseViewModel<T> extends ChangeNotifier {
 
   void clear(){
     item = null;
+    notifyListeners();
   }
 }
