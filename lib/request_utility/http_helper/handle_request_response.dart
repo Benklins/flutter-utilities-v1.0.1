@@ -1,6 +1,8 @@
 import 'package:flutter_utilities/utilities.dart';
 
 class HandleRequestResponse{
+  HandleRequestResponse._();
+  
   static Future<void> handleResponse(
      Future<SuccessResponse> Function() requestFunc,
     Function responseFunc(SuccessResponse response),
