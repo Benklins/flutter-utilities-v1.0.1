@@ -11,8 +11,8 @@ class BaseObjectInitial extends BaseObjectState {}
 
 class BaseObjectLoading extends BaseObjectState {}
 
-class BaseObjectLoaded<T> extends BaseObjectState {
-  final T data;
+class BaseObjectLoaded extends BaseObjectState {
+  final dynamic data;
 
   BaseObjectLoaded(this.data);
 
