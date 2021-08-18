@@ -8,7 +8,7 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
   Future<Dio> _getInstance() async {
     _client = Dio();
 
-    _client.options.headers = headers;
+    _client.options.headers = await headers;
 
     return _client;
   }
@@ -46,5 +46,5 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
   }
 
   @override
-  Map<String, String> get headers;
+  Future<Map<String, String>> get headers;
 }

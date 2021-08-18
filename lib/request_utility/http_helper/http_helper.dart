@@ -11,5 +11,6 @@ abstract class HttpHelper<R> {
 
   Future<R> delete(String url, {dynamic body});
   
-  Map<String, String> get headers;
+  Future<Map<String, String>> get headers;
+  
 }
