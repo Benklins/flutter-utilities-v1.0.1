@@ -1,9 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class StorageHelper {
-
   StorageHelper._();
-  
+
   static late SharedPreferences _prefs;
 
   static Future<dynamic> _getInstance() async =>
@@ -42,5 +41,9 @@ class StorageHelper {
     if (preferences.containsKey(key)) {
       preferences.remove(key);
     }
+  }
+
+  static void initTestInstance(SharedPreferences sharedPreferences) {
+    _prefs = sharedPreferences;
   }
 }
