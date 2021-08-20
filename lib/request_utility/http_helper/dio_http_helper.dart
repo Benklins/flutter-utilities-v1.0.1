@@ -9,6 +9,7 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
     _client = Dio();
 
     _client.options.headers = await headers;
+    if (interceptiors != null) _client.interceptors.addAll(interceptiors!);
 
     return _client;
   }
@@ -47,4 +48,6 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
 
   @override
   Future<Map<String, String>> get headers;
+
+  List<Interceptor>? get interceptiors;
 }
