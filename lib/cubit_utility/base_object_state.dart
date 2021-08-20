@@ -11,10 +11,11 @@ class BaseObjectInitial extends BaseObjectState {}
 
 class BaseObjectLoading extends BaseObjectState {}
 
-class BaseObjectLoaded extends BaseObjectState {
-  final dynamic data;
+class BaseObjectLoaded<T, K> extends BaseObjectState {
+  final T data;
+  final K? successType;
 
-  BaseObjectLoaded(this.data);
+  BaseObjectLoaded(this.data, {this.successType});
 
   @override
   List<Object?> get props => [data];

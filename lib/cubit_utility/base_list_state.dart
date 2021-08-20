@@ -11,10 +11,10 @@ class BaseListInitial extends BaseListState {}
 
 class BaseListLoading extends BaseListState {}
 
-class BaseListLoaded extends BaseListState {
-  final List<dynamic> list;
-
-  BaseListLoaded(this.list);
+class BaseListLoaded<T, K> extends BaseListState {
+  final List<T> list;
+  final K? type;
+  BaseListLoaded(this.list, {this.type});
 
   @override
   List<Object> get props => [list];
