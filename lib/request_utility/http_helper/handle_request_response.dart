@@ -9,12 +9,13 @@ class HandleRequestResponse<T> {
     void errorFunc(String error),
   ) async {
     try {
-      SuccessResponse<T> response = await requestFunc() as SuccessResponse<T>;
+      SuccessResponse<T> response = (await requestFunc()) as SuccessResponse<T>;
       responseFunc(response);
     } on RequestFailedException catch (e) {
       var error = (e.message as ErrorResponse);
       errorFunc(error.errorMessage);
     } catch (e) {
+      print('GENERAL ERROR CLAUSE ===== $e');
       errorFunc(e.toString());
     }
   }
