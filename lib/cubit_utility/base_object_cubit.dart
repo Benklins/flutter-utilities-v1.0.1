@@ -6,7 +6,7 @@ part 'base_object_state.dart';
 abstract class BaseObjectCubit<T> extends Cubit<BaseObjectState> {
   BaseObjectCubit() : super(BaseObjectInitial());
 
-  void emitLoaded(dynamic object) {
+  void emitLoaded(T object) {
     emit(BaseObjectLoaded(object));
   }
 
