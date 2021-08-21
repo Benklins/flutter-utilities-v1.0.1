@@ -9,7 +9,9 @@ class HandleRequestResponse<T> {
     void errorFunc(String error),
   ) async {
     try {
-      SuccessResponse<T> response = (await requestFunc()) as SuccessResponse<T>;
+      SuccessResponse<T> response =
+          SuccessResponse<T>((await requestFunc()).value);
+          
       responseFunc(response);
     } on RequestFailedException catch (e) {
       var error = (e.message as ErrorResponse);
