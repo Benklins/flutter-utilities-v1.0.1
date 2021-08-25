@@ -11,8 +11,8 @@ class BaseListInitial extends BaseListState {}
 
 class BaseListLoading extends BaseListState {}
 
-class BaseListLoaded<T, K> extends BaseListState {
-  final List<T> list;
+class BaseListLoaded<T extends List, K> extends BaseListState {
+  final T list;
   final K? type;
   BaseListLoaded(this.list, {this.type});
 
@@ -28,3 +28,5 @@ class BaseListError extends BaseListState {
   @override
   List<Object> get props => [error];
 }
+
+class BaseListEmptyState extends BaseListState{}
