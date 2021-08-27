@@ -30,3 +30,5 @@ class BaseListError extends BaseListState {
 }
 
 class BaseListEmptyState extends BaseListState{}
+
+class BaseBottomListLoading extends BaseListState{}

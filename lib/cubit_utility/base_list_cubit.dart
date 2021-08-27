@@ -17,6 +17,10 @@ abstract class BaseListCubit<T> extends Cubit<BaseListState> {
     emit(BaseListLoading());
   }
 
+  void emitBottomListLoading() {
+    emit(BaseBottomListLoading());
+  }
+
   void emitListError(String error) {
     emit(BaseListError(error));
   }
