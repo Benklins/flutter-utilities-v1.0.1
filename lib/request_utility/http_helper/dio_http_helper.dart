@@ -17,33 +17,38 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
   Future<Response> get(String url, {dynamic options}) async {
     final instance = await _getInstance();
 
-    return instance.get(url, options: options);
+    return instance.get(url,
+        options: options ?? Options(headers: await headers));
   }
 
   Future<Response> download(String url, String savePath,
       {dynamic callback}) async {
     final instance = await _getInstance();
-    return instance.download(url, savePath, onReceiveProgress: callback);
+    return instance.download(url, savePath,
+        onReceiveProgress: callback, options: Options(headers: await headers));
   }
 
   Future<Response> post(String url, {dynamic body}) async {
     final instance = await _getInstance();
-    return instance.post(url, data: body);
+    return instance.post(url,
+        data: body, options: Options(headers: await headers));
   }
 
   Future<Response> put(String url, {dynamic body}) async {
     final instance = await _getInstance();
-    return instance.put(url, data: body);
+    return instance.put(url,
+        data: body, options: Options(headers: await headers));
   }
 
   Future<Response> patch(String url, {dynamic body}) async {
     final instance = await _getInstance();
-    return instance.patch(url, data: body);
+    return instance.patch(url,
+        data: body, options: Options(headers: await headers));
   }
 
   Future<Response> delete(String url, {dynamic body}) async {
     final instance = await _getInstance();
-    return instance.delete(url);
+    return instance.delete(url, options: Options(headers: await headers));
   }
 
   @override
