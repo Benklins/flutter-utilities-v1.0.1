@@ -18,4 +18,12 @@ abstract class ListBaseViewModel<T> extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  void resetSelected(){
+    this.currentlySelected = null;
+  }
+
+  void clearList(){
+    this.itemList.clear();
+  }
 }
