@@ -20,10 +20,12 @@ abstract class ListBaseViewModel<T> extends ChangeNotifier {
 
   void resetSelected() {
     this.currentlySelected = null;
+    notifyListeners();
   }
 
   void clearList() {
     this.itemList.clear();
+    notifyListeners();
   }
 
   void replaceByIndex({required int index, required T replacement}) {
