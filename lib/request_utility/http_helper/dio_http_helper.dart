@@ -56,5 +56,5 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
 
   List<Interceptor>? get interceptiors;
 
-  BaseOptions? get dioOption=> null;
+  BaseOptions? get dioOption => null;
 }
