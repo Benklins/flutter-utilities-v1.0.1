@@ -6,7 +6,7 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
   static late Dio _client;
 
   Future<Dio> _getInstance() async {
-    _client = Dio();
+    _client = Dio(dioOption);
 
     _client.options.headers = await headers;
     if (interceptiors != null) _client.interceptors.addAll(interceptiors!);
@@ -55,4 +55,6 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
   Future<Map<String, String>> get headers;
 
   List<Interceptor>? get interceptiors;
+
+  BaseOptions? get dioOption=> null;
 }
