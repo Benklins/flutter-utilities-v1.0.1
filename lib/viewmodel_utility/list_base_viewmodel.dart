@@ -7,7 +7,6 @@ abstract class ListBaseViewModel<T> extends ChangeNotifier {
   void addToList(List<T> items, {bool clear = true}) {
     if (clear) {
       this.itemList.clear();
-      if (this.itemList.isNotEmpty) currentlySelected = this.itemList.first;
     }
     itemList.addAll(items);
     notifyListeners();
@@ -19,11 +18,41 @@ abstract class ListBaseViewModel<T> extends ChangeNotifier {
     notifyListeners();
   }
 
-  void resetSelected(){
+  void resetSelected() {
     this.currentlySelected = null;
   }
 
-  void clearList(){
+  void clearList() {
     this.itemList.clear();
+  }
+
+  void replaceByIndex({required int index, required T replacement}) {
+    try {
+      this.itemList[index] = replacement;
+    } catch (e) {
+      print(e.toString());
+    }
+    notifyListeners();
+  }
+
+  void replaceWhere({
+    required bool Function(T item) whereClause,
+    required T replacement,
+  }) {
+    T? prevItem = findWhere(whereClause: whereClause);
+
+    if (prevItem != null) {
+      int index = itemList.indexOf(prevItem);
+      this.itemList[index] = replacement;
+    }
+    notifyListeners();
+  }
+
+  T? findWhere({required bool Function(T item) whereClause}) {
+    try {
+      return itemList.where((element) => whereClause(element)).first;
+    } catch (_) {
+      return null;
+    }
   }
 }
