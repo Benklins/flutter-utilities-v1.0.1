@@ -1,6 +1,6 @@
 name: flutter_utilities
-description: Contains utility classes
-version: 0.0.1
+description: Contains utility classes for network calls, flutter bloc and viewmodels
+version: 1.0.0
 homepage:
 
 environment:
