@@ -1,6 +1,6 @@
-name: flutter_utilities
-description: Contains utility classes for network calls, flutter bloc and viewmodels
-version: 1.0.0
+name: request_utility
+description: A new Flutter package project.
+version: 0.0.1
 homepage:
 
 environment:
@@ -10,23 +10,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  request_utility:
-    path: ./request_utility
-
-  logic_utility:
-    path: ./logic_utility
-    
-  storage_utility:
-    path: ./storage_utility
-
-  connection_utility:
-    path: ./connection_utility
-
-  mocktail: ^0.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^1.0.0
+  dio: ^4.0.0
+  mocktail: ^0.1.4
+  equatable: ^2.0.3
+  bloc_test: ^8.3.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -23,7 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbffd5dc-5250-4302-bbd2-f53431ceb121" name="Default Changelist" comment="used full path in utilities.dart">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cubit_utility/base_list_cubit.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cubit_utility/base_list_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cubit_utility/base_object_cubit.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cubit_utility/base_object_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cubit_utility/cubit_utility_export.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/dio_api_consuming_simplification.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/error/error.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/error/error_response.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/error/request_exception.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/http_helper/dio_http_helper.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/http_helper/handle_request_response.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/http_helper/http_helper.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/http_helper/http_helper_export.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/simplify_api_consuming_base.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/success/success.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/request_utility/success/success_response.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage_utility/shared_pref/storage_helper.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage_utility/storage_utility_export.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utilities.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utilities.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/viewmodel_utility/list_base_viewmodel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/viewmodel_utility/object_object_viewmodel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/viewmodel_utility/viewmodel_utility_export.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dio_api_consuming_simplification_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/view_model_utility/list_base_viewmodel_impl.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/view_model_utility/list_base_viewmodel_test.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +65,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1va86cF9XOHEjg2HLdcJvs19FJO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,9 +75,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/FlutterProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -85,7 +120,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -96,15 +148,5 @@
     <MESSAGE value="resolved issue where wrong import was causing caos" />
     <MESSAGE value="used full path in utilities.dart" />
     <option name="LAST_COMMIT_MESSAGE" value="used full path in utilities.dart" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="229" y="68" key="SettingsEditor" timestamp="1626788706840">
-      <screen x="0" y="25" width="1440" height="814" />
-    </state>
-    <state x="229" y="68" key="SettingsEditor/0.25.1440.814@0.25.1440.814" timestamp="1626788706840" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1626789785221">
-      <screen x="0" y="25" width="1440" height="814" />
-    </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1626789785221" />
   </component>
 </project>
