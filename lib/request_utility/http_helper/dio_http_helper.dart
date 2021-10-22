@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_utilities/request_utility/request_utility_export.dart';
 
 abstract class DioHttpHelper extends HttpHelper<Response> {
-  static late Dio? _client;
+  static Dio? _client;
 
   void setMockDio(Dio dio) {
     _client = dio;
