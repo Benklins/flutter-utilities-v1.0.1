@@ -1,6 +1,8 @@
 abstract class HttpHelper<R> {
   Future<R> get(String url, {dynamic queryParameters, dynamic options});
 
+  Future<R> getUri(Uri uri, {dynamic options});
+
   Future<R> download(String url, String savePath,
       {dynamic callback, dynamic options});
 

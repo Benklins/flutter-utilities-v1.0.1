@@ -1,11 +1,10 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:request_utility/request_utility_export.dart';
 
 abstract class DioHttpHelper extends HttpHelper<Response> {
   static late Dio? _client;
 
-  void setMockDio(Dio dio){
+  void setMockDio(Dio dio) {
     _client = dio;
   }
 
@@ -22,9 +21,17 @@ abstract class DioHttpHelper extends HttpHelper<Response> {
   Future<Response> get(String url,
       {dynamic queryParameters, dynamic options}) async {
     final instance = await _getInstance();
-    
+
     return instance.get(url,
         queryParameters: queryParameters,
+        options: options ?? Options(headers: await headers));
+  }
+
+  @override
+  Future<Response> getUri(Uri uri, {options}) async {
+    final instance = await _getInstance();
+
+    return instance.getUri(uri,
         options: options ?? Options(headers: await headers));
   }
 
