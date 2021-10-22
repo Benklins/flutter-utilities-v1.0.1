@@ -2,6 +2,7 @@ name: flutter_utilities
 description: Contains utility classes for network calls, flutter bloc and viewmodels
 version: 1.0.0
 homepage:
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
