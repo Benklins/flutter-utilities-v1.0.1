@@ -22,7 +22,7 @@ abstract class DioApiConsumption
         errorResponse,
         dataSuccessValidator: dataSuccessValidator,
       );
-    } on SocketException catch (e) {
+    } on SocketException catch (_) {
       throw RequestFailedException<ErrorResponse>(
         ErrorResponse(
             errorMessage:

@@ -28,8 +28,10 @@ main() {
   );
 }
 
+// ignore: unused_element
 String get _dummyUrl => 'https://dummy.com';
 
+// ignore: unused_element
 void _setUpDioMockCall(MockDio dio) {
   when(() => dio.get(any(),
           queryParameters: any(named: 'queryParameters'),
