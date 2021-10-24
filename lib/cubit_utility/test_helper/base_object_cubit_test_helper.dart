@@ -20,8 +20,9 @@ class BaseObjectCubitTestHelper<B extends BaseObjectCubit<Obj>, Obj> {
     this.setup = setup;
   }
 
+  ///[T] is for success type
   @isTest
-  void testBaseObjectSuccess(
+  void testBaseObjectSuccess<T>(
       {required String whenText,
       required Function(B cubit) act,
       required Function(B cubit) verify,
@@ -37,7 +38,7 @@ class BaseObjectCubitTestHelper<B extends BaseObjectCubit<Obj>, Obj> {
         act: act,
         expect: () => [
           BaseObjectLoading(),
-          BaseObjectLoaded(
+          BaseObjectLoaded<Obj, T>(
             objectExpected,
             successType: successType,
           ),
