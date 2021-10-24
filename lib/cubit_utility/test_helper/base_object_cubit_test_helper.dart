@@ -21,13 +21,13 @@ class BaseObjectCubitTestHelper<B extends BaseObjectCubit<Obj>, Obj> {
   }
 
   @isTest
-  void testBaseObjectSuccess({
-    required String whenText,
-    required Function(B cubit) act,
-    required Function(B cubit) verify,
-    B Function()? build,
-    required Obj objectExpected,
-  }) {
+  void testBaseObjectSuccess(
+      {required String whenText,
+      required Function(B cubit) act,
+      required Function(B cubit) verify,
+      B Function()? build,
+      required Obj objectExpected,
+      dynamic successType}) {
     test.test('emits [BaseObjectLoading(), BaseObjectLoaded()] when $whenText',
         () async {
       // ignore: invalid_use_of_visible_for_testing_member
@@ -37,7 +37,10 @@ class BaseObjectCubitTestHelper<B extends BaseObjectCubit<Obj>, Obj> {
         act: act,
         expect: () => [
           BaseObjectLoading(),
-          BaseObjectLoaded(objectExpected),
+          BaseObjectLoaded(
+            objectExpected,
+            successType: successType,
+          ),
         ],
         verify: (cubit) {
           verify(cubit);

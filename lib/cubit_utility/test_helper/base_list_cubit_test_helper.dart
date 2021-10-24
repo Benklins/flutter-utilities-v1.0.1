@@ -23,12 +23,12 @@ class BaseListCubitTestHelper<B extends BaseListCubit<Obj>, Obj> {
 
   @isTest
   void testInitialBaseListSuccess({
+    required String whenText,
     required Function(B cubit) act,
     required Function(B cubit) verify,
     B Function()? build,
     required List<Obj> cubitListExpected,
     required List<Obj> viewModelListExpected,
-    required String whenText,
   }) {
     test.test('emits [BaseListLoading(), BaseListLoaded()] when $whenText',
         () async {
@@ -51,10 +51,10 @@ class BaseListCubitTestHelper<B extends BaseListCubit<Obj>, Obj> {
 
   @isTest
   void testBaseListLoadingEmptySuccess({
+    required String whenText,
     required Function(B cubit) act,
     required Function(B cubit) verify,
     required List<Obj> viewModelListExpected,
-    required String whenText,
     B Function()? build,
   }) {
     test.test('emits [BaseListLoading(), BaseListEmptyState()] when $whenText',
@@ -78,11 +78,11 @@ class BaseListCubitTestHelper<B extends BaseListCubit<Obj>, Obj> {
 
   @isTest
   void testNextBaseListSuccess({
+    required String whenText,
     required Function(B cubit) act,
     required Function(B cubit) verify,
     required List<Obj> cubitListExpected,
     required List<Obj> viewModelListExpected,
-    required String whenText,
     B Function()? build,
   }) {
     test.test(
@@ -108,9 +108,9 @@ class BaseListCubitTestHelper<B extends BaseListCubit<Obj>, Obj> {
 
   @isTest
   void testInitialBaseListError({
+    required String whenText,
     required Function(B cubit) act,
     required Function(B cubit) verify,
-    required String whenText,
     required String error,
     B Function()? build,
   }) {
@@ -136,9 +136,9 @@ class BaseListCubitTestHelper<B extends BaseListCubit<Obj>, Obj> {
 
   @isTest
   void testNextBaseListError({
+    required String whenText,
     required Function(B cubit) act,
     required Function(B cubit) verify,
-    required String whenText,
     required String error,
     B Function()? build,
   }) {
