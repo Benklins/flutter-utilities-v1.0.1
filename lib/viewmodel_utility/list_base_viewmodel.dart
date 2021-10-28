@@ -57,4 +57,13 @@ abstract class ListBaseViewModel<T> extends ChangeNotifier {
       return null;
     }
   }
+
+  void insert({int? index, required T item}) {
+    if (index == null)
+      itemList.add(item);
+    else
+      itemList.insert(index, item);
+
+    notifyListeners();
+  }
 }

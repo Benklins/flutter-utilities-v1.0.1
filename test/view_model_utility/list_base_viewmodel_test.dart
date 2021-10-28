@@ -165,4 +165,31 @@ main() {
       );
     },
   );
+
+  group(
+    "Test insert",
+    () {
+      test(
+        "Ensure that item is inserted in right index when "
+        "insert() called and index provided",
+        () {
+          listBaseViewModel.itemList = ['Hello', 'World'];
+
+          listBaseViewModel.insert(index: 1, item: 'Hi');
+          expect(listBaseViewModel.itemList[1], 'Hi');
+        },
+      );
+
+      test(
+        "Ensure that item is added to last index when "
+        "insert() called and index WAS NOT provided",
+        () {
+          listBaseViewModel.itemList = ['Hello', 'World'];
+
+          listBaseViewModel.insert(item: 'Hi');
+          expect(listBaseViewModel.itemList.last, 'Hi');
+        },
+      );
+    },
+  );
 }
