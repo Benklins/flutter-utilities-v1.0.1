@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:dio/dio.dart';
 
 class DioFileHelper {
@@ -15,6 +17,13 @@ class DioFileHelper {
     );
   }
 
+  static MultipartFile getMultipartByte(Uint8List byte, String fileName) {
+    return MultipartFile.fromBytes(
+      byte,
+      filename: fileName,
+    );
+  }
+
   /// This method helps to replace the [imageKey] in [map]
   /// with a [MultipartFile] as such [imageKey] must be a
   /// value in [map]
@@ -27,6 +36,20 @@ class DioFileHelper {
     map[imageKey] = await MultipartFile.fromFile(
       path,
     );
+
+    return map;
+  }
+
+  /// This method helps to replace the [imageKey] in [map]
+  /// with a [MultipartFile] as such [imageKey] must be a
+  /// [Uint8List] in [map]
+  static Map<String, dynamic> getMultipartByteMap(
+      Map<String, dynamic> map, String imageKey, String fileName) {
+    Uint8List? byte = map[imageKey];
+    if (byte == null)
+      throw Exception(
+          'image byte with key ::$imageKey must be contained in map');
+    map[imageKey] = getMultipartByte(byte, fileName);
 
     return map;
   }
