@@ -100,18 +100,18 @@ This line `DioApiConsumption.instance.simplifyApiRequest()` is where the magic h
 An optional `bool useStatusCodeForSuccessCheck ` to use a status code for check if an api request was successful, if this is set to true it evaluates with the `statusCodeSuccess ` parameter.
 if `useStatusCodeForSuccessCheck` is false, it evaluates using the json returned by the api response, a named param function has to be passed `dataSuccessValidator`, this is a function that passes the json as an argument and return a bool, that evaluates if api request was successful or not.
 
-To handle error:
+To handle make handle api calls (accounting for errors and success) from business logic part of the app:
 
 ```
-try {
-      await _tryApiRequestFunction(0, 0);
-    } on RequestFailedException catch (e) {
-      ErrorResponse errorResponse = e.message;
-      emit(state.error(errorResponse.errorMessage));
-    } catch (e) {
-      emit(state.error(e.toString()));
-    }
-  }
+  HandleRequestResponse.handleResponse<List<Country>>(
+      () => service.getLatestCountryDataByCode(countryCode),
+      (response) {
+        viewModel.addToList(response.value);
+        emitListLoaded(response.value);
+      },
+      (error) => emitListError(error),
+    );
+
 ```
 
 If this (`lib\request_utility\dio_api_consuming_simplification.dart`) doesn't suit your needs, you can customise this by implementing this abstract class
