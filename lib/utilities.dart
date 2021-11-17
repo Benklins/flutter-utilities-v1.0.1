@@ -1,3 +1,5 @@
+export 'package:dio/dio.dart';
+
 export 'connection_utility/connection_utility_export.dart';
 export 'cubit_utility/cubit_utility_export.dart';
 export 'request_utility/request_utility_export.dart';
