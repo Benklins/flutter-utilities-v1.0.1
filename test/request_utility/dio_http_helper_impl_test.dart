@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:dio/src/interceptor.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_utilities/request_utility/request_utility_export.dart';
 import 'package:mocktail/mocktail.dart';

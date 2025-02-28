@@ -1,20 +1,27 @@
-import 'package:connectivity/connectivity.dart';
+
+
+import 'package:connectivity_plus/connectivity_plus.dart';
+
 
 class ConnectionHelper {
-  static late ConnectivityResult _connectivityResult;
+  static late List<ConnectivityResult> _connectivityResults;
 
-  static Future _connect() async {
-    _connectivityResult = await Connectivity().checkConnectivity();
+  static Future<void> _connect() async {
+    _connectivityResults = await Connectivity().checkConnectivity();
   }
 
   static Future<bool> hasConnection() async {
     await _connect();
-    if (_connectivityResult == ConnectivityResult.mobile) return true;
-    if (_connectivityResult == ConnectivityResult.wifi) return true;
+    for (var result in _connectivityResults) {
+      if (result == ConnectivityResult.mobile || result == ConnectivityResult.wifi) {
+        return true;
+      }
+    }
     return false;
   }
 
-  static Stream<ConnectivityResult> connectionListener() {
+  static Stream<List<ConnectivityResult>> connectionListener() {
     return Connectivity().onConnectivityChanged;
   }
 }
+
